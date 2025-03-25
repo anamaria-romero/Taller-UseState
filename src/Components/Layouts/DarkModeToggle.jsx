@@ -1,4 +1,5 @@
 import { useState } from "react";
+import darkModeIcon from "../../assets/DarkMode/modo-oscuro.png";
 
 export const DarkModeToggle = ({ setDarkMode }) => {
   const [isDark, setIsDark] = useState(false);
@@ -10,7 +11,7 @@ export const DarkModeToggle = ({ setDarkMode }) => {
 
   return (
     <button className="toggle-mode" onClick={toggleMode}>
-      {isDark ? "Modo Claro" : "Modo Oscuro"}
+      <img src={darkModeIcon} alt="Modo Oscuro" className="dark-mode-icon" />
     </button>
   );
 };
