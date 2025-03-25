@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.container {
+  text-align: center;
+  padding: 20px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: var(--background);
+  transition: background 0.3s ease-in-out;
+}
+
+:root {
+  --background: #fff;
+  --text-color: #000;
+  --button-bg: #333;
+  --button-text: #fff;
+}
+
+.dark-mode {
+  --background: #000;
+  --text-color: #fff;
+  --button-bg: #fff;
+  --button-text: #000;
+}
+
+h1 {
+  color: var(--text-color);
+  margin-bottom: 20px;
+}
+
+.color-container {
+  margin-top: 25px;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  transition: background 0.3s ease-in-out;
+  border: 2px solid var(--text-color);
+}
+
+.color-container button {
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+
+}
+
+.like-dislike {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.like-dislike button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+  width: 100px;
+}
+
+.like-dislike img {
+  width: 25px;
+  height: 25px;
+}
+
+.like-dislike button:nth-child(1) {
+  background: rgba(0, 255, 0, 0.781);
+}
+
+.like-dislike button:nth-child(2) {
+  background: rgba(255, 0, 0, 0.788);
+  color: white;
+}
+
+.timer {
+  margin-top: 25px;
+  position: sticky;
+  bottom: 20px;
+  right: 20px;
+  text-align: center;
+}
+
+.timer h1 {
+  font-size: 20px;
+  color: var(--text-color);
+}
+
+.timer button {
+  padding: 10px;
+  margin: 5px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.timer button:nth-child(2) {
+  background: rgba(0, 255, 0, 0.781);
+}
+
+.timer button:nth-child(3) {
+  background: rgba(255, 0, 0, 0.788);
+  color: white;
+}
