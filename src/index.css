@@ -31,13 +31,25 @@
   --button-text: #000;
 }
 
+.toggle-mode {
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  border-radius: 50px;
+}
+
+.toggle-mode img.dark-mode-icon {
+  width: 58px;
+  height: 58px;
+  border-radius: 50px;
+}
+
 h1 {
   color: var(--text-color);
-  margin-bottom: 20px;
 }
 
 .color-container {
-  margin-top: 25px;
+  margin-top: 10px;
   width: 250px;
   height: 250px;
   border-radius: 50%;
@@ -83,12 +95,11 @@ h1 {
 }
 
 .like-dislike button:nth-child(1) {
-  background: rgba(0, 255, 0, 0.781);
+  background: rgba(87, 85, 223, 0.781);
 }
 
 .like-dislike button:nth-child(2) {
-  background: rgba(255, 0, 0, 0.788);
-  color: white;
+  background: rgba(240, 65, 225, 0.788);
 }
 
 .timer {
@@ -105,19 +116,17 @@ h1 {
 }
 
 .timer button {
-  padding: 10px;
+  padding: 7px;
   margin: 5px;
-  border: none;
   cursor: pointer;
   border-radius: 5px;
   font-size: 14px;
 }
 
 .timer button:nth-child(2) {
-  background: rgba(0, 255, 0, 0.781);
+  background: rgba(78, 75, 207, 0.781);
 }
 
 .timer button:nth-child(3) {
-  background: rgba(255, 0, 0, 0.788);
-  color: white;
+  background: white;
 }
